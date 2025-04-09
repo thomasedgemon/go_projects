@@ -15,6 +15,23 @@ notes. allow this to be null
 
 how to save to csv? combine all three fields into one string with separated by commas, and then encrypt? store as item name, encryption in csv? 
 
+how to return decrypted data? also comma separated, or just dynamically fill fields?
+
 how can we make the csv tamper evident? or at best, tamper proof?
 
 will have to read in the item names from the csv in order to choose which to decrypt. 
+
+allow user to reset master password
+
+init csv from program, but allow user to move it after the fact to a location of their choosing.
+
+allow user to delete credentials from the csv
+
+use GCM to ensure integrity of the data. 
+
+to init master password:
+PBKDF2-SHA256 100,000 times , store to csv
+
+to verify master password:
+PBKDF2-SHA256 100,000 times
+encrypt: 
