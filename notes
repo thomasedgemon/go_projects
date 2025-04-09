@@ -1,0 +1,20 @@
+password manager:
+
+make program stateless
+
+give user the option to only have to input master password once upon launch, or with every read/write action. 
+  which is more secure?
+
+read from / write to a csv so that the program can be stateless.
+
+fields for new credential:
+item name
+username
+password
+notes. allow this to be null
+
+how to save to csv? combine all three fields into one string with separated by commas, and then encrypt? store as item name, encryption in csv? 
+
+how can we make the csv tamper evident? or at best, tamper proof?
+
+will have to read in the item names from the csv in order to choose which to decrypt. 
